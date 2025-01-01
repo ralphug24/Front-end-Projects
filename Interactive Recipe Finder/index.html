@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Recipe Finder</h1>
+        <p>Find your favorite recipes quickly and easily!</p>
+        <input type="text" id="search-bar" placeholder="Search recipes..." />
+    </header>
+    <main>
+        <section id="filter-section">
+            <label for="cuisine-select">Filter by Cuisine:</label>
+            <select id="cuisine-select">
+                <option value="all">All</option>
+                <option value="italian">Italian</option>
+                <option value="indian">Indian</option>
+                <option value="mexican">Mexican</option>
+            </select>
+        </section>
+        <section id="recipes-grid">
+            <!-- Recipe cards will be dynamically added here -->
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
