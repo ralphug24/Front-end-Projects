@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Prioritization Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Feature Prioritization Tool</h1>
+    </header>
+    <main>
+        <section id="feature-input">
+            <h2>Add a Feature</h2>
+            <form id="feature-form">
+                <input type="text" id="feature-name" placeholder="Feature Name" required>
+                <label for="impact">Impact (1-5):</label>
+                <input type="number" id="impact" min="1" max="5" required>
+                <label for="cost">Cost (1-5):</label>
+                <input type="number" id="cost" min="1" max="5" required>
+                <label for="effort">Effort (1-5):</label>
+                <input type="number" id="effort" min="1" max="5" required>
+                <button type="submit">Add Feature</button>
+            </form>
+        </section>
+        <section id="feature-list">
+            <h2>Feature List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Impact</th>
+                        <th>Cost</th>
+                        <th>Effort</th>
+                        <th>Priority Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="features-table">
+                    <!-- Features will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
